@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 
 public class InsertActivity extends AppCompatActivity {
@@ -58,7 +60,7 @@ public class InsertActivity extends AppCompatActivity {
         String nev = varosText.getText().toString().trim();
         String orszag = orszagText.getText().toString().trim();
         int lakossag = Integer.parseInt(lakossagText.getText().toString().trim());
-        City varos = new City(0, nev, orszag, lakossag);
+        Varos varos = new Varos(0, nev, orszag, lakossag);
        Gson converter = new Gson();
         return converter.toJson(varos);
     }

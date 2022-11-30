@@ -7,6 +7,9 @@ public class Varos {
     private String nev, orszag;
     private int lakossag;
 
+    public Varos(int i, String nev, String orszag, int lakossag) {
+    }
+
     public void City(int id, String nev, String orszag, int lakossag) {
         this.id = id;
         this.nev = nev;
