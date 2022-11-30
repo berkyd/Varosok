@@ -16,7 +16,7 @@ public class InsertActivity extends AppCompatActivity {
 
     private Button addCityButton, visszaButton;
     private EditText varosText, orszagText, lakossagText;
-    private static final String baseUrl = "https://retoolapi.dev/tBJYiU/varosok";
+    private static final String baseUrl = "https://retoolapi.dev/EXCwwX/varosok";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
