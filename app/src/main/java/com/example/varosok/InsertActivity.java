@@ -59,7 +59,7 @@ public class InsertActivity extends AppCompatActivity {
         String orszag = orszagText.getText().toString().trim();
         int lakossag = Integer.parseInt(lakossagText.getText().toString().trim());
         City varos = new City(0, nev, orszag, lakossag);
-        Gson converter = new Gson();
+       Gson converter = new Gson();
         return converter.toJson(varos);
     }
 

@@ -98,7 +98,7 @@ public class ListActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Response response){
-            Gson converter = new Gson();
+           // Gson converter = new Gson();
             super.onPostExecute(response);
             if(response == null){
                 Toast.makeText(ListActivity.this, "unable_to_connect", Toast.LENGTH_SHORT).show();
@@ -111,7 +111,7 @@ public class ListActivity extends AppCompatActivity {
             switch (requestMethod){
                 case "GET":
                     String content = response.getContent();
-                    cities = Arrays.asList(converter.fromJson(content, Varos[].class));
+                   // cities = Arrays.asList(converter.fromJson(content, Varos[].class));
                     System.out.println("!"+cities);
                     listView.setText(cities.toString());
                     break;
